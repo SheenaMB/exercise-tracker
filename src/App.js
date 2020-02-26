@@ -12,13 +12,14 @@ import './App.css';
 function App() {
   return (
     <Router>
+      <div className="container">
       <Navbar />
       <br/>
-      <Route path="/" exact component={ExercisesList} />
-      <Route path="/edit:id" exact component={EditExercises} />
-      <Route path="/create" exact component={CreateExercises} />
-      <Route path="/user" exact component={CreateUser} />
-      
+        <Route path="/" exact component={ExercisesList} />
+        <Route path="/edit:id" exact component={EditExercises} />
+        <Route path="/create" exact component={CreateExercises} />
+        <Route path="/user" exact component={CreateUser} />
+      </div>
     </Router>
   );
 }
